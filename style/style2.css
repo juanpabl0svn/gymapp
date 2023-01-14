@@ -1,0 +1,76 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(http://localhost/gymapp/images/background.jpg);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    background-color: rgba(194, 240, 240,.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 40vh;
+    border-radius: 20px;
+
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.data input{
+    display: flex;
+    align-items: right;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    outline: none;
+    border-radius: 200px;
+    border: none;
+    padding: 7px 2px;
+}
+
+input[type="text"], input[type="password"]{
+    border: none;
+    border-radius: 100px;
+    background-color: rgba(243, 53, 53, 0.3);
+    outline: none;
+    
+}
+
+
+
+button{
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 5px;
+    margin-top: 40px;
+    background-color:rgba(243, 53, 53, 0.9);
+    color: white;
+}
+
+input:focus{
+    background-color: rgba(243, 53, 53, 0.9);
+    transition: background-color 0.5s ease;
+    transform: scale(1.02);
+    transition: transform 0.8s ease;
+}
+
+button:hover{
+    background-color:rgb(221, 54, 54);
+    transition: background-color 0.8s ease;
+    transform: scale(1.08);
+    transition: transform 0.8s ease;
+}
+

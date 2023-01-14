@@ -1,0 +1,117 @@
+body{  
+    background-image: url(http://localhost/gymapp/images/background.jpg);
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform:  translate( 50%, -50%);
+    width: 30vh;
+    height: 50vh;
+    border-top-left-radius: 40px;
+    background: rgba(194, 240, 240,.9);
+    border-bottom-right-radius: 40px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50% 20%;
+}
+
+input[type="email"], input[type="password"]{
+    margin: 10px 0;
+    border: none;
+    border-radius: 100px;
+    background-color: rgba(243, 53, 53, 0.3);
+    height: 3vh;
+    width: 20vh ;
+    outline: none;
+    
+}
+
+label{
+    font-family: Georgia, serif;
+}
+
+button{
+    margin-top: 20px;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    width: 10vh;
+    height: 3vh;
+    border: none;
+    background-color:rgba(243, 53, 53, 0.9);
+    border-radius: 40px;
+    color:white;
+}
+
+a{
+    margin-top: 10px;
+    font-size: small;
+    text-decoration: None;
+
+        
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+input:focus{
+    background-color: rgba(243, 53, 53, 0.9);
+    transition: background-color 0.5s ease;
+    transform: scale(1.02);
+    transition: transform 0.8s ease;
+}
+
+button:hover{
+    background-color:rgb(221, 54, 54);
+    transition: background-color 0.8s ease;
+    transform: scale(1.08);
+    transition: transform 0.8s ease;
+
+}
+
+
+@media (min-width: 968px) {
+
+    .container{
+        width: 60vh;
+        height: 80vh;
+    
+    }
+
+    input[type="email"], input[type="password"]{
+        height: 4vh;
+        width: 24vh ;
+    }
+
+    button{
+        width: 15vh;
+        height: 5vh;
+    }
+    
+    label{
+        font-size: 2vh;
+    }
+
+    a{
+        margin-top: 20px;
+        font-size: 1.8vh;
+        text-decoration: None;
+    
+            
+    }
+
+
+
+
+
+}
