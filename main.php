@@ -38,7 +38,7 @@ session_start();
                 ?>
             </div>
             <?php
-                if($message != "No hay citas"){echo "<button>Check QR code</button>";}
+                if($message != "No hay citas"){echo "<button name='qr_code'>Check QR code</button>";}
             ?>
         </div>
         <div class="username">
@@ -50,7 +50,20 @@ session_start();
             }
             ?>
         </div>
+        <div class="bookings">
+            <div class="title_bookings">
+            <h2>Reserve</h2>
+            </div>
+            <form action="">
+                <button>08:00am - 10:00am</button>
+                <button>10:00am -  12:00am</button>
+                <button>06:00am - 08:00am</button>
+                <button>12:00pm - 02:00pm</button>                      
+                <button>02:00pm - 04:00pm</button>
+                <button>04:00pm - 06:00pm</button>
+                <button>06:00pm - 08:00pm</button>
+            </form>
+        </div>
     </div>
-
 </body>
 </html>

@@ -8,7 +8,6 @@ body{
 header{
     height: 12vh;
     display: flex;
-    width: 100%;
     justify-content: space-between;
     background-color: rgb(250, 242, 242);
     align-items: center;
@@ -49,6 +48,8 @@ header nav a{
     padding: 2px 80px;
     background-color: bisque;
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .info{
@@ -71,9 +72,44 @@ header nav a{
     font-family: 'Times New Roman', Times, serif;
 }
 
+.bookings{
+    position: absolute;
+    left: 25%;
+    top: 55%;
+    width: 43vh;
+}
+.title_bookings{
+    position:relative;;
+    background: #ffff;
+    width: 43vh;
+    top: -13px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding-bottom:40px;
+}
+
+form{
+    background:bisque;
+    padding: 1vh;
+}
+
+form button{
+    margin: .3vh 0px;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #ffff;
+}
 
 
 
+button:hover{
+    transform: scale(1.2);
+    transition: transform .2s  ease;
+}
 a:hover{
     color: red;
     transition: color 0.3s ease;
