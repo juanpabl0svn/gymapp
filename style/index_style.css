@@ -25,7 +25,7 @@ form{
     padding: 50% 20%;
 }
 
-input[type="email"], input[type="password"]{
+input[type="email"], input[type="password"],input[type="text"]{
     margin: 10px 0;
     border: none;
     border-radius: 100px;
@@ -33,15 +33,31 @@ input[type="email"], input[type="password"]{
     height: 3vh;
     width: 20vh ;
     outline: none;
-    
+    padding: 2px 20px;
+}
+
+input[type="checkbox"]{
+    cursor:pointer ;
 }
 
 label{
     font-family: Georgia, serif;
 }
 
+.check_password{
+    height: 3vh;
+    width: 20vh ;
+    margin-top: 10px;                                                               
+}
+
+
+.unique_label{
+    font-size:small;
+    padding-left: 5px
+}
+
 button{
-    margin-top: 20px;
+    margin-top: 15px;
     font-family: Georgia, serif;
     cursor: pointer;
     width: 10vh;
@@ -55,9 +71,7 @@ button{
 a{
     margin-top: 10px;
     font-size: small;
-    text-decoration: None;
-
-        
+    text-decoration: None;   
 }
 
 a:hover{
@@ -76,9 +90,7 @@ button:hover{
     transition: background-color 0.8s ease;
     transform: scale(1.08);
     transition: transform 0.8s ease;
-
 }
-
 
 @media (min-width: 968px) {
 
@@ -88,7 +100,7 @@ button:hover{
     
     }
 
-    input[type="email"], input[type="password"]{
+    input[type="email"], input[type="password"],input[type="text"]{
         height: 4vh;
         width: 24vh ;
     }
@@ -106,12 +118,23 @@ button:hover{
         margin-top: 20px;
         font-size: 1.8vh;
         text-decoration: None;
-    
-            
     }
 
 
-
-
-
 }
+
+@media (min-height: 415px){
+    .check_password{
+        margin-top: 5px;
+    }
+
+    button{
+        margin-top: 8px;
+    }
+
+    a{
+        margin-top: 5px; 
+    }
+}
+
+

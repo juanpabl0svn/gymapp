@@ -12,7 +12,17 @@ header{
     justify-content: space-between;
     background-color: rgb(250, 242, 242);
     align-items: center;
-    padding: 0 30px;
+    padding: 0 20px;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+
+}
+
+nav{
+    margin-right: 50px;
 }
 
 header div img{
@@ -20,7 +30,7 @@ header div img{
 }
 
 header nav label{
-    padding-left: 40px;
+    padding: 20px;
 }
 
 header nav a{
@@ -28,12 +38,11 @@ header nav a{
     color: black;
 }
 
-.container{
-    padding: 40px;
-}
-
 .dates{
     width: 100px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
 }
 
 .title{
@@ -53,9 +62,9 @@ header nav a{
 .username{
     position: absolute;
     right: 3%;
-    top: 20%;
+    top:17%;
     background-color: bisque;
-    padding: 0 20px;
+    padding: 15px;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
     font-size:medium;
@@ -64,8 +73,8 @@ header nav a{
 
 
 
+
 a:hover{
     color: red;
     transition: color 0.3s ease;
-
 }

@@ -2,14 +2,29 @@
 
 include("./scripts/db.php");
 
-// $query = "SELECT * FROM usuarios WHERE usuario = '_SESSION' "
+function check($user){
+    $info = get_bookings($user);        
+    if (empty($info)){
+        return "No hay citas";
+    }
+    if ($info[2]==date("Y-m-d")){
+        return "Ya tiene reserva para hoy";
+    }
+    reset_bookings($user);
+    return "No hay citas";
+}
 
-// $result = 
+function reset_bookings($user){
+    $query = "Delete FROM bookings WHERE user = '$user'";
+    $result = mysqli_query($GLOBALS["conn"],$query);
+    return;
+}
 
-
-// if ($_SESSION["user"]{
-//     echo "Si";
-// })
-
+function get_bookings($user) {
+    $query = "SELECT * FROM bookings WHERE user = '$user'";
+    $result = mysqli_query($GLOBALS["conn"],$query);
+    $info = mysqli_fetch_array($result);
+    return $info;
+}
 
 ?>

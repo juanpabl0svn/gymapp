@@ -27,8 +27,8 @@ function login(){
 function check($user,$password){
     $query = "SELECT * FROM usuarios WHERE Usuario = '$user' and contraseña = '$password'";
     $result = mysqli_query($GLOBALS["conn"],$query);
-    $row = mysqli_fetch_array($result);
-    return $row;
+    $info = mysqli_fetch_array($result);
+    return $info;
 }
 
 ?>
